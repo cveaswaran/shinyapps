@@ -38,7 +38,7 @@ server <- function(input, output) {
 
     output$distPlot <- renderPlot({
       
-     ggplot(data, aes(v))+geom_histogram(bins=input$bins)
+     ggplot(data, aes(v))+geom_histogram(bins=input$bins, col="white", fill="red")
    
     })
 }
